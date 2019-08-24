@@ -3,9 +3,13 @@
 ## Environment
 
 RaspberryPi 3B
+
 Raspbian Stretch
+
 Docker 19.03.1
+
 NodeJs 10.16.3
+
 MongoDB 3.0.14 
 
 ## Environment preparation
@@ -48,13 +52,21 @@ docker run -v /data/db:/data/db -v /data/configdb:/data/configdb -p 3000:3000 -t
 ## All the API endpoints available
 
 (GET/POST) http://localhost:3000/careers
+
 (GET/PUT/DELETE) http://localhost:3000/careers/:careerId
+
 (PUT/DELETE) http://localhost:3000/careersCourse/:careerId/:courseId
+
 (GET/POST) http://localhost:3000/courses
+
 (GET/PUT/DELETE) http://localhost:3000/courses/:courseId
+
 (GET/POST) http://localhost:3000/students
+
 (GET/PUT/DELETE) http://localhost:3000/students/:studentId
+
 (PUT/DELETE) http://localhost:3000/studentsCourse/:studentId/:courseId
+
 (PUT) http://localhost:3000/studentsUpdateCourse/:studentId/:courseId/:status/:grade
 
 There is an example for each endpoint in the postman collection (POC-RESTful-API.postman_collection.json)
