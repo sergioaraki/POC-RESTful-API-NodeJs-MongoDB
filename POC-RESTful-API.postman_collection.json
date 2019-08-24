@@ -1,0 +1,276 @@
+{
+	"variables": [],
+	"info": {
+		"name": "POC-RESTful-API",
+		"_postman_id": "305f734c-b58a-922f-c57e-7a8ba03f4396",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a Course",
+			"request": {
+				"url": "http://localhost:3000/courses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Course 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "workload",
+							"value": "128",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List all Courses",
+			"request": {
+				"url": "http://localhost:3000/courses",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Career",
+			"request": {
+				"url": "http://localhost:3000/careers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Career 1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "degree",
+							"value": "Degree of Career 1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List all Careers",
+			"request": {
+				"url": "http://localhost:3000/careers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Career by id",
+			"request": {
+				"url": "http://localhost:3000/careers/5d607ebf864bb8001ca541ee",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Career by id",
+			"request": {
+				"url": "http://localhost:3000/careers/5d607ebf864bb8001ca541ee",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Course to a Career by ids",
+			"request": {
+				"url": "http://localhost:3000/careerCourse/5d607ebf864bb8001ca541ee/5d607dd7864bb8001ca541ed",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove a Course of a Career by ids",
+			"request": {
+				"url": "http://localhost:3000/careerCourse/5d607ebf864bb8001ca541ee/5d607dd7864bb8001ca541ed",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Course by id",
+			"request": {
+				"url": "http://localhost:3000/courses/5d607dd7864bb8001ca541ed",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Course by id",
+			"request": {
+				"url": "http://localhost:3000/courses/5d607dd7864bb8001ca541ed",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List all Students",
+			"request": {
+				"url": "http://localhost:3000/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Student",
+			"request": {
+				"url": "http://localhost:3000/students",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Student name",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "01/01/1990",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Student address",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "career_id",
+							"value": "5d607ebf864bb8001ca541ee",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Student by id",
+			"request": {
+				"url": "http://localhost:3000/students/5d6081ef864bb8001ca541ef",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Student by id",
+			"request": {
+				"url": "http://localhost:3000/students/5d6081ef864bb8001ca541ef",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Course to a Student by ids",
+			"request": {
+				"url": "http://localhost:3000/studentsCourse/5d6081ef864bb8001ca541ef/5d607dd7864bb8001ca541ed",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove a Course of a Student by ids",
+			"request": {
+				"url": "http://localhost:3000/studentsCourse/5d6081ef864bb8001ca541ef/5d607dd7864bb8001ca541ed",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Course status and grade of a Student by ids",
+			"request": {
+				"url": "http://localhost:3000/studentsUpdateCourse/5d6081ef864bb8001ca541ef/5d607dd7864bb8001ca541ed/completed/7",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

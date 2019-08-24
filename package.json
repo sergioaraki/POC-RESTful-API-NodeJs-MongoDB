@@ -1,0 +1,15 @@
+{
+  "name": "POC-RESTful-API",
+  "version": "1.0.0",
+  "description": "POC API in nodejs with mongodb running in docker in RaspberryPi",
+  "author": "Sergio Araki",
+  "license": "MIT",
+  "main": "./app/index.js",
+  "scripts": {
+    "start": "node ./app/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9"
+  }
+}
